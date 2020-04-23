@@ -14,9 +14,9 @@
         private $loader;
         public function __construct(RPGLike $rpg)
         {
-            parent::__construct('stats');
+            parent::__construct('rpg');
             $this->loader = $rpg;
-            $this->setDescription('Shows your current stats');
+            $this->setDescription('Shows your rpg stats');
             $this->setPermission('rpglike.stats');
             $this->setAliases(['stats, statistics']);
         }
